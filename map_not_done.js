@@ -14,3 +14,7 @@ const charCodesOf = function (strings) {
 const truthValuesOf = function (numbers) {
   return numbers.map(isIntegerValue);
 };
+
+// normalize strings by centering them based on the longest string length in ["cat", "elephant", "dog"] => ["  cat   ", "elephant", "  dog   "]
+// (pad with spaces to justify to the center)
+const centerJustifyStrings = function (strings) { };
