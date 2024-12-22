@@ -2,12 +2,6 @@
 // const filterBySubjectGrade = function (students, subject, threshold) {
 // };
 
-// // filter photos with a minimum number of likes [{id: 1, likes: 100}, {id: 2, likes: 50}] => [{id: 1, likes: 100}]
-// const filterByLikes = function (photos, likes) { };
-
-// // filter users who have made a certain number of posts [{username: "Alice", posts: 10}, {username: "Bob", posts: 5}] => [{username: "Alice", posts: 10}]
-// const filterByPostCount = function (users, postCount) { };
-
 // // Apply a discount to each item's price, then filter for items under a certain price [{name: "item1", price: 100}, {name: "item2", price: 50}] => [{name: "item2", price: 45}]
 // const filterDiscountedItems = function (items, discount, maxPrice) { };
 

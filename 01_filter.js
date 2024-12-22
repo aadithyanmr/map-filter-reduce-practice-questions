@@ -254,3 +254,17 @@ const filterByYear = function (books, year) {
 };
 
 // console.log(filterByYear([{ title: "Book1", year: 2020 }, { title: "Book2", year: 2022 }], 2020));
+
+// // filter photos with a minimum number of likes [{id: 1, likes: 100}, {id: 2, likes: 50}] => [{id: 1, likes: 100}]
+const filterByLikes = function (photos, likes) {
+  return filterTargetWithPredicate(photos, 'likes', likes, isLess);
+};
+
+// console.log(filterByLikes([{ id: 1, likes: 100 }, { id: 2, likes: 50 }], 70));
+
+// // filter users who have made a certain number of posts [{username: "Alice", posts: 10}, {username: "Bob", posts: 5}] => [{username: "Alice", posts: 10}]
+const filterByPostCount = function (users, postCount) {
+  return filterTargetWithPredicate(users, 'posts', postCount, isGreater);
+};
+
+console.log(filterByPostCount([{ username: "Alice", posts: 10 }, { username: "Bob", posts: 5 }], 6));
