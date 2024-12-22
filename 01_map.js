@@ -1,3 +1,9 @@
+const invert = function (f) {
+  return function (...args) {
+    return !f(...args);
+  };
+};
+
 // squares of [1, 2, 3] => [1, 4, 9]
 const square = function (number) {
   return number * number;
@@ -171,12 +177,6 @@ const reversedArraysOf = function (arrays) {
 };
 
 // console.log(reversedArraysOf([[1, 2, 3], [4, 5, 6]]));
-
-const invert = function (fun) {
-  return function (...args) {
-    return !fun(...args);
-  };
-};
 
 // remove vowels from ["apple", "banana", "grape"] => ["ppl", "bnn", "grp"]
 const removeVowels = function (string) {
