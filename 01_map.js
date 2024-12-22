@@ -51,16 +51,16 @@ const firstCharactersOf = function (strings) {
 // console.log(firstCharactersOf(["apple", "banana", "kiwi"]));
 
 // reverse strings of ["hello", "world"] => ["olleh", "dlrow"]
-const reverse = function (string) {
+const reverseString = function (string) {
   if (string === "") {
     return "";
   }
 
-  return reverse(string.slice(1)) + string[0];
+  return reverseString(string.slice(1)) + string[0];
 };
 
 const reversedStringsOf = function (strings) {
-  return strings.map(reverse);
+  return strings.map(reverseString);
 };
 
 // console.log(reversedStringsOf(["hello", "world"]));
@@ -162,10 +162,9 @@ const countVowelsOf = function (strings) {
 
 // reverse arrays of [[1, 2, 3], [4, 5, 6]] => [[3, 2, 1], [6, 5, 4]]
 const unshift = function (reversedArray, element) {
-  const array = reversedArray;
-  array.unshift(element);
+  reversedArray.unshift(element);
 
-  return array;
+  return reversedArray;
 };
 
 const reverseArray = function (array) {
@@ -210,7 +209,7 @@ const cumulativeSumsOf = function (arrays) {
 
 // reverse words in ["hello world", "goodbye moon"] => ["olleh dlrow", "eybdoog noom"]
 const reverseWords = function (words) {
-  return words.split(' ').map(reverse).join(' ');
+  return words.split(' ').map(reverseString).join(' ');
 };
 
 const reversedWordsOf = function (strings) {
